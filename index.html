@@ -1,0 +1,58 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MyPhoneCalculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+  <div class="calculator">
+    <div class="display">
+      <input id="display"type="text" name="display">
+    </div>
+    <div class="buttons-container">
+      <div class="button function logo"><img id="imgClickAndChange" onclick="changeImage()" src="./img/sticker-ordinateur-logo-information-ambiance-sticker-KC10255.png"></div>
+      <input type="button" class="button function ac " value="AC" onclick="seeIt.value = ''">
+      <input type="button" class="button function del"  value="DEL"
+      onclick="seeIt.value = seeIt.value.slice(0,-1)">
+      <input type="button" class="button operator division" value="/"
+      onclick="seeIt.value += '/'">
+      <input type="button" class="button number-7" value="7" onclick="seeIt.value += '7'">
+      <input type="button" class="button number-8" value="8"
+      onclick="seeIt.value += '8'">
+      <input type="button" class="button number-9" value="9"
+      onclick="seeIt.value += '9'">
+      <input type="button" class="button operator multiplication" value="*" onclick="seeIt.value += '*'">
+      <input type="button" class="button number-4" value="4"
+      onclick="seeIt.value += '4'">
+      <input type="button" class="button number-5" value="5"
+      onclick="seeIt.value += '5'">
+      <input type="button" class="button number-6" value="6"
+      onclick="seeIt.value += '6'">
+      <input type="button" class="button operator subtraction" value="-" onclick="seeIt.value += '-'">
+      <input type="button" class="button number-1" value="1"
+      onclick="seeIt.value += '1'">
+      <input type="button" class="button number-2" value="2"
+      onclick="seeIt.value += '2'">
+      <input type="button" class="button number-3" value="3"
+      onclick="seeIt.value += '3'">
+      <input type="button" class="button operator addition" value="+"
+      onclick="seeIt.value += '+'">
+      <input type="button" class="button number-0" value="0"
+      onclick="seeIt.value += '0'">
+      <input type="button" class="button decimal" value="."
+      onclick="seeIt.value += '.'">
+      <input type="button" class="button operator equal" value="="
+      onclick="seeIt.value = eval(seeIt.value)">
+    </div>
+  </div>
+ </div>
+  <script src="./main.js"></script>
+</body>
+
+</html>
